@@ -127,5 +127,10 @@ namespace MonoGame.Slick.ECS.InputComponents
         {
             AssignedCommands.Remove(b);
         }
+
+        public void Save()
+        {
+            
+        }
     }
 }

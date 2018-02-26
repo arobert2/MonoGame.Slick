@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MonoGame.Slick.ECS.AudioComponents
 {
-    public class MusicComponent
+    public abstract class MusicComponent
     {
+        public MusicSet CurrentMusicSet { get; set; }
+
+        public abstract void Update(IEntity ientity);
     }
 }
