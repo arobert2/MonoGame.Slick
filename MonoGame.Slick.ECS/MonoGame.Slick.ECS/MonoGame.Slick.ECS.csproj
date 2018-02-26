@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AIComponents\AIComponent.cs" />
     <Compile Include="AudioComponents\EffectComponent.cs" />
     <Compile Include="AudioComponents\MusicComponent.cs" />
     <Compile Include="AudioComponents\MusicSet.cs" />
@@ -50,10 +51,11 @@
     <Compile Include="InputComponents\GamepadInputManager.cs" />
     <Compile Include="InputComponents\InputComponent.cs" />
     <Compile Include="InputComponents\KeyboardInputManager.cs" />
+    <Compile Include="PhysicsComponents\PhysicsComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpriteComponents\AnimatedSprite.cs" />
+    <Compile Include="SpriteComponents\SpriteComponent.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PhysicsComponents\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
