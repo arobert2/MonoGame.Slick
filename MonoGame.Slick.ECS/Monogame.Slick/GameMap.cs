@@ -10,7 +10,7 @@ namespace Monogame.Slick
 {
     public class GameMap
     {
-        public List<IDrawableEntity> MapEntities { get; set; } = new List<IDrawableEntity>();
+        public virtual List<IDrawableEntity> MapEntities { get; set; } = new List<IDrawableEntity>();
 
         public Texture2D Background { get; set; }
         public bool XWrap { get; set; }

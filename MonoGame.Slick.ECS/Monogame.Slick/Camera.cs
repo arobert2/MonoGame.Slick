@@ -31,8 +31,26 @@ namespace Monogame.Slick
         /// <summary>
         /// Zoom level, uses a float 1 represents 100%
         /// </summary>
-        public float Zoom { get { return _zoom; } set { if (value == 0) { _zoom = 0.000000001f; } else { _zoom = value; } } }
+        public float Zoom {
+            get { return _zoom; }
+            set {
+                if (value < MinimumZoom)
+                {
+                    _zoom = MinimumZoom;
+                }
+                else if (value > MaximumZoom)
+                {
+                    _zoom = MaximumZoom;
+                }
+                else
+                {
+                    _zoom = value;
+                }
+            }
+        }
         private float _zoom = 1f;
+        public float MinimumZoom { get; set; } = .25f;
+        public float MaximumZoom { get; set; } = 3f;
 
         public void Draw(ref SpriteBatch spriteBatch)
         {

@@ -1,4 +1,5 @@
-﻿using MonoGame.Slick.ECS;
+﻿using Microsoft.Xna.Framework.Graphics;
+using MonoGame.Slick.ECS;
 using MonoGame.Slick.ECS.SpriteComponents;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,7 @@ namespace Monogame.Slick
     public interface IDrawableEntity : IEntity
     {
         SpriteComponent Sprite { get; set; }
+
+        void Draw(ref SpriteBatch spriteBatch);
     }
 }
