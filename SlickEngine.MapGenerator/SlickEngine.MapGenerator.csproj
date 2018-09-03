@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="csDelaunay\Delaunay\Edge.cs" />
     <Compile Include="csDelaunay\Delaunay\EdgeList.cs" />
     <Compile Include="csDelaunay\Delaunay\EdgeReorderer.cs" />

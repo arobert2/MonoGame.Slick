@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1A1E81D-09D7-45BE-9E54-9EC35EBFE150}</ProjectGuid>
+    <ProjectGuid>{5EFF6E95-D4CF-4D9C-AE43-A6563D2D99E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SlickEngine.Map</RootNamespace>
-    <AssemblyName>SlickEngine.Map</AssemblyName>
+    <RootNamespace>SlickEngine.Graphics</RootNamespace>
+    <AssemblyName>SlickEngine.Graphics</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,20 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMapItem.cs" />
-    <Compile Include="Map.cs" />
-    <Compile Include="MapTile.cs" />
+    <Compile Include="GraphicPackage.cs" />
+    <Compile Include="GraphicsRepostiroy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SlickEngine.Shapes\SlickEngine.Shapes.csproj">
-      <Project>{6ED03085-D78F-495C-AC13-66DB34EECD86}</Project>
-      <Name>SlickEngine.Shapes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SlickEngine.UI\SlickEngine.UI.csproj">
-      <Project>{9A6F9A26-627A-4819-AED0-38471274E886}</Project>
-      <Name>SlickEngine.UI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

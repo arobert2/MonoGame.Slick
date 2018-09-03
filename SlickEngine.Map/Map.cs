@@ -11,13 +11,13 @@ namespace SlickEngine.Map
 {
     public class Map<T> where T : IShape
     {
-        public Texture Textuer { get; set; }
+        public Texture Texture { get; set; }
 
         public T[,] MapTile { get; set; }
 
         public Rectangle[,] TextureTiles { get; set; }
 
-        public MapTile this [int x, int y]
+        public MapTile this[int x, int y]
         {
             get
             {
@@ -29,6 +29,11 @@ namespace SlickEngine.Map
 
                 return maptile;
             }
+        }
+
+        public Map(int x, int y)
+        {
+            MapTile = new T[x, y];
         }
     }
 }
